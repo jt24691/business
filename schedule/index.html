@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Password</title>
+<link rel="icon" type="image/x-icon" href="">
+ <style>
+   body {
+    background-color: #3EBF0B;
+    padding: 30px;
+   }
+ </style>
+ <script>
+  function checkPassword() {
+   var password = document.getElementById("passwordBox");
+   var passwordText = password.value;
+   if(passwordText == "0100") {
+    return true;
+   }
+   alert("Access denied! Incorrect password!");
+   return false;
+   }
+ </script>
+</head>
+<body>
+ <p style="font-size: 30pt;">MOW 'EM DOWN lawncare</p>
+ <p>webpage developers ONLY.</p>
+ <p>Password:<input id="passwordBox" type="password"/></p>
+ <a href="./data/index.html" target="_blank" onclick="return checkPassword();">
+  Click here to submit password and view website
+ </a>
+</body>
+</html>
